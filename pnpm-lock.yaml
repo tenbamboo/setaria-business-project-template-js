@@ -64,8 +64,8 @@ devDependencies:
     specifier: ^1.79.5
     version: 1.79.5
   swagger-to-jsonschema:
-    specifier: ^0.0.4
-    version: 0.0.4(json-schema-to-typescript@13.1.2)(prettier@3.1.0)
+    specifier: ^0.0.7
+    version: 0.0.7(json-schema-to-typescript@13.1.2)(prettier@3.1.0)
   unplugin-auto-import:
     specifier: ^0.18.3
     version: 0.18.3(rollup@2.79.2)
@@ -2410,8 +2410,8 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /swagger-to-jsonschema@0.0.4(json-schema-to-typescript@13.1.2)(prettier@3.1.0):
-    resolution: {integrity: sha512-eyL4fWGZWzH6hSQ66qcv7xUBsItpaInk9hZQV4KZt2P2Q6qx/e4Kbc5EKR6JMbxDqkj2nUP6wKSPuRAYXOMitg==}
+  /swagger-to-jsonschema@0.0.7(json-schema-to-typescript@13.1.2)(prettier@3.1.0):
+    resolution: {integrity: sha512-zfaJurRd63Ib3zewRmIno1IHlc8BCdPDs+UgBeaZuOTnKYWkzkaWQgoW6RPZvB5pJt48lTmm9pDFzJaykmFq9g==}
     hasBin: true
     peerDependencies:
       json-schema-to-typescript: ^13.1.1
