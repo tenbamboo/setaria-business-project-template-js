@@ -1,0 +1,19 @@
+{
+  "jsonSchema": {
+    "schemaInput": {
+      "swaggerUrls": {
+        "claim": {
+          "url": "http://inside.sit.com/v3/api-docs/1.0%20%E7%89%88%E6%9C%AC",
+          "name": "test服务"
+        }
+      }
+    },
+    "schemaOutput": "./json-schema",
+    "interfaceOutput": "./interface",
+    "setting": {
+      "isOutputApiManagementFile": false,
+      "isTitleNullCompletionByPropKey": false,
+      "isGenerateInterfaceByTypescript": false
+    }
+  }
+}

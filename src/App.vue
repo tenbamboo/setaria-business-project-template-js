@@ -1,30 +1,33 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  // import { reactive } from "vue";
+  // import type { SchemaProps } from "setaria-components";
+  import MainLayout from "./components/layout/index.vue";
+  import { useRouter } from "vue-router";
+  const router = useRouter();
+
+  const gotoDemo1 = () => {
+    router.push({
+      path: "/demo1/demo1-1",
+    });
+  };
+  const gotoDemo2 = () => {
+    router.push({
+      path: "/demo1/demo1-2",
+    });
+  };
+  const gotoDemo3 = () => {
+    router.push({
+      path: "/demo1/demo1-3",
+    });
+  };
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <el-button @click="gotoDemo1">接口测试</el-button>
+  <el-button @click="gotoDemo2">Pinia测试</el-button>
+  <el-button @click="gotoDemo3">国际化测试</el-button>
+  <hr />
+  <main-layout />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>

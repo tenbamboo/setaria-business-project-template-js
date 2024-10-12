@@ -1,5 +1,15 @@
-# Vue 3 + Vite
+ <p align="center">面向企业级的前端项目模版(Js)</p>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Vue 3 Composition API
+- JsonSchema 规范
+- 基于 Element Plus
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Getting Started
+
+- 访问(https://tenbamboo.github.io/setaria-business-framework/zh-CN/)
+
+## 其他链接
+
+- Setaria Components UI 框架(https://tenbamboo.github.io/setaria-components/zh-CN/)
+- 使用 Element Plus Setaria Components 等企业级工具的项目模版(https://github.com/tenbamboo/setaria-business-project-template)
+- 使用 Element Plus Setaria Components 等企业级工具的项目模版(https://github.com/tenbamboo/setaria-business-project-template-js)
