@@ -89,15 +89,12 @@
     },
   });
 
-  const formValue = {};
+  const formValue = reactive({
+    testCustomSlot: 3,
+  });
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank"> aaaa </a>
-    <a href="https://vuejs.org/" target="_blank"> bb </a>
-  </div>
-
   <el-button type="primary">hello</el-button>
 
   <sc-schema-form

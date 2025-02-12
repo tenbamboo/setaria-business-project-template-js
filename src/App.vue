@@ -20,12 +20,18 @@
       path: "/demo1/demo1-3",
     });
   };
+  const gotoDemo4 = () => {
+    router.push({
+      path: "/demo2/demo2-1",
+    });
+  };
 </script>
 
 <template>
   <el-button @click="gotoDemo1">接口测试</el-button>
   <el-button @click="gotoDemo2">Pinia测试</el-button>
   <el-button @click="gotoDemo3">国际化测试</el-button>
+  <el-button @click="gotoDemo4">表格组件测试</el-button>
   <hr />
   <main-layout />
 </template>

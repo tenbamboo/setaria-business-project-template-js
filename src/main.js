@@ -12,6 +12,7 @@ import "setaria-business-framework/dist/index.css";
 import "./style.css";
 import { getEnvParams } from "./utils";
 import config from "./config";
+import "./mock/";
 
 new Framework(config, getEnvParams()).mount();
 
