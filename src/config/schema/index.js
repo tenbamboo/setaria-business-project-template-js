@@ -6,10 +6,12 @@ import Claim from "./claim.json";
 import Config from "./config.json";
 import Cac from "./cac.json";
 import Fund from "./fund.json";
+import Demo from "./demo.json";
 
 export default {
   Claim,
   Config,
   Cac,
   Fund,
+  Demo,
 };

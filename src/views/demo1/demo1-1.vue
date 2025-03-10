@@ -1,23 +1,25 @@
 <template>
-  <div class="hello-would commom-css">Hello Demo1-1</div>
+  <div>
+    <div class="hello-would commom-css">Hello Demo1-1</div>
 
-  <bf-hello-would> dddd </bf-hello-would>
+    <bf-hello-would> dddd </bf-hello-would>
 
-  <el-button @click="testThrowServiceException">ServiceError</el-button>
+    <el-button @click="testThrowServiceException">ServiceError</el-button>
 
-  <el-button @click="testThrowApplicationException">ApplicationError</el-button>
+    <el-button @click="testThrowApplicationException">ApplicationError</el-button>
 
-  <el-button @click="test404ErrorData">测试404错误</el-button>
+    <el-button @click="test404ErrorData">测试404错误</el-button>
 
-  <el-button @click="test500ErrorData">测试500错误</el-button>
+    <el-button @click="test500ErrorData">测试500错误</el-button>
 
-  <el-button @click="testJsException">测试JS报错</el-button>
+    <el-button @click="testJsException">测试JS报错</el-button>
 
-  <el-button @click="getDataList({})">接口调用</el-button>
+    <el-button @click="getDataList({})">接口调用</el-button>
 
-  <el-button @click="getDataListByMany">controllRepeat测试</el-button>
+    <el-button @click="getDataListByMany">controllRepeat测试</el-button>
 
-  <el-button @click="testDownload">测试下载</el-button>
+    <el-button @click="testDownload">测试下载</el-button>
+  </div>
 </template>
 <script setup>
   import {

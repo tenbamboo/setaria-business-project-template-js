@@ -1,32 +1,34 @@
 <template>
-  <p>基本国际化</p>
-  <el-button @click="setLang">{{ t("setLang") }}</el-button>
-  <p>{{ t("currentLang", { lang: currentlang }) }}</p>
+  <div>
+    <p>基本国际化</p>
+    <el-button @click="setLang">{{ t("setLang") }}</el-button>
+    <p>{{ t("currentLang", { lang: currentlang }) }}</p>
 
-  <p>Element Plus国际化</p>
-  <el-calendar />
+    <p>Element Plus国际化</p>
+    <el-calendar />
 
-  <p>表格组件国际化</p>
+    <p>表格组件国际化</p>
 
-  <sc-schema-table :schema="schema" :data="dataList" show-page :page-total="pageTotal" />
+    <sc-schema-table :schema="schema" :data="dataList" show-page :page-total="pageTotal" />
 
-  <p>封装组件中的国际化</p>
+    <p>封装组件中的国际化</p>
 
-  <sc-search-form
-    v-model="formValue"
-    :schema="schema"
-    label-width="130px"
-    label-suffix=":"
-    columns="3"
-  />
+    <sc-search-form
+      v-model="formValue"
+      :schema="schema"
+      label-width="130px"
+      label-suffix=":"
+      columns="3"
+    />
 
-  <p>业务组件中的国际化</p>
+    <p>业务组件中的国际化</p>
 
-  <bf-search-page
-    :schema="baseSchema"
-    :condition-schema="conditionSchema"
-    :request="handlerRequest"
-  />
+    <bf-search-page
+      :schema="baseSchema"
+      :condition-schema="conditionSchema"
+      :request="handlerRequest"
+    />
+  </div>
 </template>
 <script setup>
   import { computed, reactive } from "vue";

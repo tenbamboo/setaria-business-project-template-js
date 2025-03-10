@@ -30,6 +30,7 @@ const callFun = (obj) => {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
+        "@store": path.resolve(__dirname, "src/config/store/"),
       },
       // alias: [
       // {

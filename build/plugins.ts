@@ -8,6 +8,7 @@ import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
+import vitePluginVueSetupExtend from "vite-plugin-vue-setup-extend";
 export function getPluginsList(viteEnv: any, command: string) {
   // const prodMock = true;
 
@@ -15,6 +16,7 @@ export function getPluginsList(viteEnv: any, command: string) {
 
   return [
     vue(),
+    vitePluginVueSetupExtend(),
     // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
     // VueI18n({
     //   runtimeOnly: true,

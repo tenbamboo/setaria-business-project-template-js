@@ -1,7 +1,23 @@
 <script setup>
   import { reactive } from "vue";
-  // import type { SchemaProps } from "setaria-components";
+  import { useRouter } from "vue-router";
+  const router = useRouter();
 
+  const gotoDemo22 = () => {
+    router.push({
+      path: "/demo2/demo2-2",
+    });
+    // router.replace({
+    //   path: "/403",
+    // });
+
+    // router.replace({
+    //   name: "redirect",
+    //   params: {
+    //     path: "/demo2/demo2-2",
+    //   },
+    // });
+  };
   const schema = reactive({
     required: [],
     properties: {
@@ -95,34 +111,35 @@
 </script>
 
 <template>
-  <el-button type="primary">hello</el-button>
+  <div>
+    <el-button type="primary" @click="gotoDemo22">跳转测试无权限功能</el-button>
 
-  <sc-schema-form
-    v-model="formValue"
-    :schema="schema"
-    label-width="130px"
-    label-suffix=":"
-    columns="3"
-  >
-    <template #testCustomSlot="scope">
-      <el-rate v-model="scope.testCustomSlot" />
-    </template>
-  </sc-schema-form>
+    <sc-schema-form
+      v-model="formValue"
+      :schema="schema"
+      label-width="130px"
+      label-suffix=":"
+      columns="3"
+    >
+      <template #testCustomSlot="scope">
+        <el-rate v-model="scope.testCustomSlot" />
+      </template>
+    </sc-schema-form>
 
-  <hr />
-  <sc-search-form
-    v-model="formValue"
-    :schema="schema"
-    label-width="130px"
-    label-suffix=":"
-    columns="3"
-  >
-    <template #testCustomSlot="scope">
-      <el-rate v-model="scope.testCustomSlot" />
-    </template>
-  </sc-search-form>
+    <hr />
+    <sc-search-form
+      v-model="formValue"
+      :schema="schema"
+      label-width="130px"
+      label-suffix=":"
+      columns="3"
+    >
+      <template #testCustomSlot="scope">
+        <el-rate v-model="scope.testCustomSlot" />
+      </template>
+    </sc-search-form>
+  </div>
 </template>
-
 <style scoped>
   .logo {
     height: 6em;

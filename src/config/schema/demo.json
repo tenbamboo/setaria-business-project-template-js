@@ -1,0 +1,42 @@
+{
+  "UserInfo": {
+    "title": "UserInfo",
+    "required": [],
+    "type": "object",
+    "properties": {
+      "fullName": { "type": "string", "title": "用户名" },
+      "sex": { "type": "string", "title": "性别" },
+      "status": { "type": "integer", "title": "状态" },
+      "userName": { "type": "string", "title": "用户姓名" },
+      "userNum": { "type": "string", "title": "用户号" },
+      "whomodified": { "type": "string", "title": "编辑人" },
+      "workDate": {
+        "type": "string",
+        "description": "",
+        "format": "date-time",
+        "title": "工作时间"
+      },
+      "money": {
+        "type": "number",
+        "description": "",
+        "title": "薪资"
+      },
+      "accountMoney": {
+        "type": "number",
+        "description": "",
+        "title": "金额1"
+      },
+      "accountMaxMoney": {
+        "type": "number",
+        "description": "",
+        "title": "户头最大金额"
+      },
+      "accountMinMoney": {
+        "type": "number",
+        "description": "",
+        "title": "户头最小金额"
+      }
+    },
+    "description": "用户信息"
+  }
+}
